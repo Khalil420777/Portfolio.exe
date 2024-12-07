@@ -23,9 +23,9 @@ const StyledAppBar = styled(AppBar)({
 const NavButton = styled(Button)(({ theme }) => ({
   color: 'white',
   padding: '6px 30px',
-  fontFamily: 'Roboto, sans-serif', // Set the font family for nav buttons
-  fontWeight: '600', // Match the font weight
-  fontSize: '1.1rem', // Adjust font size
+  fontFamily: 'Lilita One',
+  fontWeight: '400',
+  fontSize: '1.1rem',
   '&:hover': {
     color: '#ff6b00',
     background: 'transparent',
@@ -98,10 +98,11 @@ const Home = () => {
             variant="h2" 
             component="h1"
             sx={{ 
-              fontFamily: 'Roboto, sans-serif', 
+              fontFamily: 'Lilita One',
               fontSize: '3.5rem', 
               mb: 2, 
-              fontWeight: '1000'
+              fontWeight: '400',
+              mt: 15,
             }}
           >
             Khalil Bouarrouj
@@ -110,7 +111,7 @@ const Home = () => {
             variant="h1" 
             component="h2"
             sx={{ 
-              fontFamily: 'Roboto, sans-serif', 
+              fontFamily: 'Lilita One',
               fontSize: '4.5rem', 
               fontWeight: '1000'
             }}
