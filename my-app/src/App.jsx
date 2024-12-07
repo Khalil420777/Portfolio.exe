@@ -1,13 +1,14 @@
-import Navbar from "./nav/navbar";
-import { Element } from 'react-scroll';
 
-function App() {
+import { Element } from 'react-scroll';
+import Home from "./home/home";
+
+const App = () => {
   return (
     <div>
-      <Navbar />
+  
       
       <Element name="home" className="section">
-        {/* Home section content */}
+        <Home />
       </Element>
 
       <Element name="about" className="section">
