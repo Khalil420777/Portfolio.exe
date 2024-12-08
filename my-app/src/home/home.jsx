@@ -33,6 +33,21 @@ const NavButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+const ActionButton = styled(Button)(({ theme }) => ({
+  color: 'white',
+  padding: '6px 20px',
+  fontFamily: 'Lilita One',
+  fontWeight: '400',
+  fontSize: '1rem',
+  border: '2px solid #ff6b00',
+  borderRadius: '25px',
+  marginLeft: '20px',
+  '&:hover': {
+    backgroundColor: '#ff6b00',
+    borderColor: '#ff6b00',
+  },
+}));
+
 const Shape = styled('div')({
   position: 'absolute',
   pointerEvents: 'none',
@@ -73,8 +88,8 @@ const Home = () => {
     <Box sx={{ bgcolor: 'black', minHeight: '100vh', minWidth: '100vw', margin: 0, padding: 0, color: 'white' }}>
       {/* Navbar */}
       <StyledAppBar>
-        <Toolbar sx={{ justifyContent: 'center', px: 4 }}>
-          <Stack direction="row" spacing={5}>
+        <Toolbar sx={{ px: 4, display: 'flex' }}>
+          <Stack direction="row" spacing={5} sx={{ flex: 1, justifyContent: 'center' }}>
             <NavButton 
               component={ScrollLink}
               to="home"
@@ -97,7 +112,7 @@ const Home = () => {
             </NavButton>
             <NavButton 
               component={ScrollLink}
-              to="projects"
+              to="skills"
               spy={true}
               smooth={true}
               offset={-70}
@@ -107,7 +122,7 @@ const Home = () => {
             </NavButton>
             <NavButton 
               component={ScrollLink}
-              to="skills"
+              to="projects"
               spy={true}
               smooth={true}
               offset={-70}
@@ -125,6 +140,34 @@ const Home = () => {
             >
               Contact
             </NavButton>
+          </Stack>
+
+          {/* New Action Buttons - with margin-right */}
+          <Stack direction="row" spacing={2} sx={{ mr: 8 }}>
+            <ActionButton
+              component={ScrollLink}
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Hire Me
+            </ActionButton>
+            <ActionButton
+              component="a"
+              href="/Khalil Bouarrouj en.pdf"
+              download
+              target="_blank"
+              sx={{
+                backgroundColor: '#ff6b00',
+                '&:hover': {
+                  backgroundColor: '#ff8533',
+                }
+              }}
+            >
+              Download CV
+            </ActionButton>
           </Stack>
         </Toolbar>
       </StyledAppBar>

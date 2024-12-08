@@ -3,6 +3,8 @@ import { Box } from '@mui/material';
 import Home from "./home/home";
 import Aboutme from './Aboutme/aboutme';
 import Skills from './Skills/skills';
+import Projects from './Projects/projects';
+import Contact from './Contact/contact';
 
 const App = () => {
   return (
@@ -22,16 +24,16 @@ const App = () => {
         <Aboutme/>
       </Element>
 
+      <Element name="skills" className="section">
+       <Skills/>
+      </Element>
+
       <Element name="projects" className="section">
-        {/* Projects section content */}
+        <Projects/>
       </Element>
 
       <Element name="contact" className="section">
-        {/* Contact section content */}
-      </Element>
-
-      <Element name="skills" className="section">
-       <Skills/>
+        <Contact/>
       </Element>
     </Box>
   );

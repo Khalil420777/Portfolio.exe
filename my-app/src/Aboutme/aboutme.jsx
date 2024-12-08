@@ -15,6 +15,7 @@ const AboutMe = () => {
           borderRadius: '50%',
           background: '#ff0000',
           opacity: 0.8,
+          
         }}
       />
 
@@ -54,7 +55,8 @@ const AboutMe = () => {
           color: 'white',
           fontWeight: '400',
           fontFamily: 'Lilita One',
-          fontSize: '3.5rem'
+          fontSize: '3.5rem',
+         
         }}
       >
         About me
@@ -79,7 +81,9 @@ const AboutMe = () => {
             variant="body1" 
             sx={{ 
               color: 'white',
-              lineHeight: 1.7
+              lineHeight: 1.7,
+              textAlign: 'justify',
+              mt:6
             }}
           >
         I’m Khalil Bouarrouj, a passionate developer from Tunisia with a diverse skill set in both mobile and web development. I hold a Baccalaureate in Economy and Management and have studied software development at RebootKamp for 6 months. During my 3-month internship at AppAxis Innovation, I worked on a web development project where I learned and gained valuable experience. My journey in development has been fueled by a curiosity for technology and a drive to create intuitive, user-friendly applications.
