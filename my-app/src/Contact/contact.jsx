@@ -220,7 +220,7 @@ const Contact = () => {
           </Tooltip>
           
           <Tooltip title="Gmail" arrow placement="top">
-            <IconButton href="bouarroujkhalil@gmail.com" target="_blank">
+            <IconButton href="https://www.gmail.com/" target="_blank">
               <GoogleIcon />
             </IconButton>
           </Tooltip>
